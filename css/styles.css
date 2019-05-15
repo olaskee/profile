@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Josefin Sans', sans-serif;
+  background: #73D6FF;
+  color: #fff;
+  font-weight: 600;
+}
+
+p, html {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* header */
+header {
+  width: 100%;
+  margin: 1.5rem auto;
+  margin-top: 1rem;
+  padding: 0;
+  position: relative;
+}
+
+/* sidebar */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #1F4C73;
+  /* background: #35B0E6; */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.sidebar-brand {
+  width: 5%;
+  position: absolute;
+  top: 2%;
+  left: 0;
+}
+.sidebar-icon {
+  position: absolute;
+  left: 20%;
+  bottom: 35%;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* sidebar social icon */
+.fab {
+  color: #fff;
+  font-size: 1rem;
+}
+.fa-times {
+  font-size: .90rem;
+}
+/* sidebar content push */
+#container-push {
+  transition: margin-left .5s;
+  padding: 0;
+}
+
+/****** navbar ********* */
+.navbar {
+  padding: 0;
+  background: none !important;
+}
+/* nabvar hire-me button */
+.btn {
+  background: #1F4C73;
+  border: none;
+  padding: .37rem 1.5rem;
+}
+.navbar .navbar-nav li a {
+  color: #1D6280 !important;
+  text-transform: uppercase;
+  font-size: .90rem ;
+}
+.navbar-toggler .sidebar-toggler {
+  border: none;
+}
+.navbar-light .navbar-toggler-icon .sidebar-toggler {
+  background-image: none;
+}
+.fas {
+  color: #35B0E6;
+  margin-left: 1rem;
+}
+.navbar-brand {
+  margin-left: 5%;
+}
+/************ navbar hover effect *************/
+
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+	margin-right: 15px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 15px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+/******** content section ***********/
+
+.container-fluid {
+  /* width: 100%;
+  height: 100vh;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background: #35B0E6; */
+}
+/* .title {
+  padding: .5em 0;
+  position: relative;
+} */
+.container {
+  position: relative;
+  height: 50vh;
+  background: red;
+}
+/* .container {
+  webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+} */
+/* .title {
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+} */
+
+/*.avatar {
+  background: yellow;
+  height: 100vh;
+} */
+.center {
+  height: 200px;
+  position: absolute;
+  border: 3px solid green;
+}
+
+.center h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+/* media query */
+@media only screen and (max-width: 900px ) {
+  .container {
+    max-width: 992px;
+  }
+  .navbar-nav {
+    padding: 0;
+    margin: 0;
+  }
+  /* custom bootstrap collapse css */
+  .collapse {
+    background: #033F72 !important;
+    padding-bottom: 1rem;
+  }
+  .collapse .navbar-nav li a {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.2rem;
+    color: #fff !important;
+  }
+  /* responsive hire-me button */
+  .btn {
+    background: #35B0E6;
+    margin: 1.5rem 0 .5rem 1.2rem;
+  }
+  /* responsive sidebar setting */
+  .sidebar-brand img {
+    display: none;
+  }
+  .sidenav {
+    background: #73D6FF;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+
+/* navbar centered */
+  .navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .navbar-right {
+    position: absolute;
+    right: 2%;
+    transform: translate(-2%);
+  }
+  .navbar .navbar-brand {
+    display: none;
+  }
+
+}
+
+/* On smaller screens, where height is less than 450px,
+change the style of the sidenav
+(less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
