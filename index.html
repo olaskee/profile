@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Collapsible sidebar using Bootstrap 4</title>
+  <title>Olamilekan Oshodi - a web designer / developer | Born in Nigeria | Based in UK</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -15,17 +15,18 @@
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- custom css styles -->
-  <!-- <link rel="stylesheet" href="css/styles.css"> -->
-  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/effect.css">
 
 </head>
 
 <body>
 
-
+<!-- sidebar section -->
   <div id="mySidenav" class="sidenav">
-      <a class="sidebar-brand" href="#"><img src="img/logo-2.png" width="55" alt="logo 2"></a>
+      <a class="sidebar-brand" href="#"><img class="color-change-3x" src="img/olaskee-pic.png" width="55" alt="logo 2"></a>
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
       <div class="sidebar-icon">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -36,28 +37,30 @@
       </div>
   </div>
 
+<section class="top">
+<!-- header section -->
 <header>
       <nav class="navbar navbar-expand-lg">
         <span class="sidebar-toggler" style="font-size:25px; font-weight: 400; cursor:pointer" onclick="openNav()"><i class="fas fa-share-alt"></i></span>
-        <a class="navbar-brand" href="#"><img src="img/logo-2.png" width="70" alt="logo 2"></a>
+        <a class="navbar-brand" href="#"><img class="color-change-3x" src="img/olaskee-pic.png" width="50" alt="logo 2"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="nav navbar-nav cl-effect-1 navbar-center">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Work</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Service</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
@@ -66,22 +69,32 @@
         </div>
       </nav>
   </header>
-  <div id="container-push" class="container-fluid">
-    <div id="title">
+
+
+  <!-- title section -->
+  <section id="title-wrap">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12 col1">
-          <h1><span class="hello">Hello,</span></h1>
-          <h2>I'm<span class="focus-in-contract-bck"> Olaskee</span></h2>
-          <h3>a web designer / developer</h3>
-          <div class="button">
-            <a class="btn-work btn-primary" href="#" role="button">Recent Work</a>
-            <a class="btn-contact btn-primary" href="#" role="button">Contact me</a>
+        <div class="col-md-12">
+          <div id="title-head">
+            <div class="title-content">
+              <h1 class="hello">Hello,</h1>
+              <h2 class="im-olaskee">I'm <span class="olaskee focus-in-contract-bck">Olaskee</span></h2>
+              <p class="title-desc">a web designer / developer</p>
+            </div>
+            <div class="title-button">
+              <a class="btn-work btn-primary" href="#" role="button">Recent Work</a>
+              <a class="btn-contact btn-primary" href="#" role="button">Contact me</a>
+            </div>
           </div>
-            <img src="img/olaskee-studio.png" class="avatar color-change-3x">
         </div>
+          <img src="img/olaskee-pic.png" class="avatar color-change-3x">
       </div>
     </div>
-  </div>
+  </section>
+
+<!-- section top     -->
+  </section>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
