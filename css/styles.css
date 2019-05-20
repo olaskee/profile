@@ -388,6 +388,11 @@ header {
       padding: 5em 0;
   }
 }
+@media only screen and (min-width: 901px) and (max-width: 1999px) {
+  .center-bottom {
+    padding-bottom: 10em;
+  }
+}
 @media only screen and (max-width: 720px){
   .center-bottom {
     padding-bottom: 5em;
