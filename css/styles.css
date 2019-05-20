@@ -39,7 +39,7 @@ img {
  background-image: linear-gradient(to right top, #1f4c73, #00719a, #0099ba, #00c2d0, #12ebdb);
 }
 .center-bottom {
-  background-image: url("../img/bottom.png");
+  background-image: url("../img/bottom.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center bottom;
