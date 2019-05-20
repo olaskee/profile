@@ -39,14 +39,11 @@ img {
  background-image: linear-gradient(to right top, #1f4c73, #00719a, #0099ba, #00c2d0, #12ebdb);
 }
 .center-bottom {
-  background-image: url("../img/svg-bg/hero-bottom-bg.svg");
+  background-image: url("../img/bottom.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center bottom;
-  margin-bottom: -3.5em;
-  padding-bottom: 12em;
 }
-
 
 /* header */
 header {
@@ -144,6 +141,9 @@ header {
 }
 .navbar-toggler .sidebar-toggler {
   border: none;
+}
+.navbar-toggler {
+  padding: .25rem 1.2rem .25rem 0;
 }
 .navbar-light .navbar-toggler-icon .sidebar-toggler {
   background-image: none;
@@ -289,8 +289,7 @@ header {
 
 @media only screen and (max-width: 992px ) {
   .center-bottom {
-    background-size: auto auto;
-
+    padding-bottom: 10em;
   }
   header {
     padding: 1.2rem 0;
@@ -371,7 +370,12 @@ header {
 }
 @media only screen and (max-width: 720px){
   .center-bottom {
-    padding-bottom: 8em;
+    padding-bottom: 5em;
+  }
+}
+@media only screen and (min-width: 360px){
+  .center-bottom {
+    margin: 0 -0.5em -0.8em -0.5em;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -385,10 +389,9 @@ header {
     padding-top: 1rem;
   }
 }
-@media only screen and (min-width: 1225px) {
+@media only screen and (min-width: 1024px) {
   .center-bottom {
-    margin-bottom: -4.5em;
-    padding-bottom: 10em;
+    padding-bottom: 15em;
   }
   .avatar {
     width: 200px;
