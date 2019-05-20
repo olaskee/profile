@@ -44,7 +44,12 @@ img {
   background-size: 100%;
   background-position: center bottom;
 }
-
+.top-right {
+  background-image: url("../img/top-right-corner.svg");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: top right;
+}
 /* header */
 header {
   width: 100%;
@@ -341,10 +346,25 @@ header {
     padding: 5em 0;
   }
 }
-
+@media only screen and (min-width: 360px) {
+  .top-right {
+    background-size: 43%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .top-right {
+    background-size: 30%;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .top-right {
+    background-size: 25%;
+  }
+}
 @media only screen and (min-width: 990px) {
-
-
+  .top-right {
+    background-size: 20%;
+  }
 /* navbar centered */
 .navbar .navbar-nav li a {
   color: #fff !important;
@@ -375,7 +395,7 @@ header {
 }
 @media only screen and (min-width: 360px){
   .center-bottom {
-    margin: 0 -0.5em -0.8em -0.5em;
+    margin: 0 0 -0.8em -0.5em;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -389,7 +409,8 @@ header {
     padding-top: 1rem;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
+
   .center-bottom {
     padding-bottom: 15em;
   }
