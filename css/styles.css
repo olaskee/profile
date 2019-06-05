@@ -18,6 +18,9 @@ p, html {
     line-height: 1.7em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 a,
 a:hover,
 a:focus {
@@ -25,14 +28,7 @@ a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-/* img {
-  border-radius: 50%;
-  opacity: 0.8;
-} */
-/* .top {
-  background: #1F4C73;
 
-} */
 #top {
  position: relative;
  background: #1F4C73;
@@ -59,12 +55,16 @@ header {
   display: block;
 }
 
+/* .fixed-top {
+  top: 0;
+} */
+
 /* sidebar */
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 9999;
   top: 0;
   left: 0;
   background: #1F4C73;
@@ -131,6 +131,9 @@ header {
 .fa-times {
   font-size: .90rem;
 }
+.fa-share-alt.nav-left {
+  color: #1F4C73;
+}
 /* sidebar content push */
 #container-push {
   transition: margin-left .5s;
@@ -139,11 +142,12 @@ header {
 
 /****** navbar ********* */
 .navbar {
-  padding: 0;
+  padding: 1.5rem 0;
   background: none !important;
+  /* opacity: 0.1; */
 }
 .navbar .navbar-nav li a {
-  color: #fff !important;
+  color: #1F4C73 !important;
   text-transform: uppercase;
   font-size: .90rem ;
 }
@@ -177,6 +181,7 @@ header {
   }
 #title-wrap .container {
   position: relative;
+  padding: 2rem 0 3rem;
 }
 .container {
   margin: 0 auto;
@@ -641,7 +646,7 @@ background: #fff;
     color: /*#06b3b3*/ #fff;
     font-weight: bold;
     text-align: center;
-    padding: 10rem 0 0.5em;
+    padding: 18rem 0 0.5em;
     font-stretch: extra-expanded;
 }
 .footer-desc {
@@ -721,6 +726,9 @@ background: #fff;
     padding-bottom: 10em;
   }
 
+  .fa-bars.hamburger {
+    color: #1F4C73;
+  }
   header {
     padding: 1.2rem 0;
   }
@@ -731,8 +739,9 @@ background: #fff;
   }
   /* custom bootstrap collapse css */
   .collapse {
-    /* background: #033F72 !important; */
-    padding-bottom: 1rem;
+    background: #1F4C73 !important;
+    background-image: linear-gradient(to right top, #1f4c73, #00719a, #0099ba, #00c2d0, #12ebdb);
+    padding: 2rem 0;
   }
   .collapse .navbar-nav li a {
     padding-top: 1.2rem;
@@ -782,17 +791,23 @@ background: #fff;
   }
 }
 @media only screen and (min-width: 760px) {
+  /* .what-i-can-do h2 {
+    font-size: 3.2rem;
+  } */
   .top-right {
     background-size: 25%;
   }
 }
 @media only screen and (min-width: 990px) {
+  #title-head {
+      padding: 8em 0 18em;
+  }
   .top-right {
     background-size: 20%;
   }
 /* navbar centered */
 .navbar .navbar-nav li a {
-  color: #fff !important;
+  color: #1F4C73 !important;
   text-transform: uppercase;
   font-size: .90rem ;
 }
@@ -819,7 +834,9 @@ background: #fff;
   }
 }
 @media only screen and (max-width: 720px) {
-
+  .what-i-can-do h2 {
+      font-size: 3.2rem;
+  }
   .design-tool {
     width: 50%;
     padding-bottom: 8rem;
